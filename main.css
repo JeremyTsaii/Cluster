@@ -1,0 +1,267 @@
+/*Font for greeting and buttons*/
+@font-face {
+    font-family: 'greetingFont';
+    src: url('fonts/segoeuil.tff') format('truetype'), url('fonts/segoeuil.woff') format('woff');
+}
+
+/*Main page*/
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(wallpapers/carWallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    justify-content: center;
+    align-content: center;
+}
+
+/*Greeting text*/
+h1 {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    color: #fff;
+    margin-bottom: 70px;
+    font-size: 60px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: greetingFont;
+    position: relative;
+    bottom: 150px;
+}
+
+/*Popup text*/
+h2 {
+    color: #7aff80;
+    font-size: 16px;
+    text-align: center;
+    font-family: greetingFont;
+}
+.popup {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(wallpapers/carbonPopup.jpg);
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/*Google search bar*/
+.search-box {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 185px;
+    z-index:1;
+
+}
+.search-button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.search-button:hover {
+    background: #3f8a42;
+}
+.search-bar {
+    height: 20px;
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+
+/*Settings*/
+.disappearing-form {
+    transform:translate(0);
+    opacity: 0;
+}
+.active {
+    transition: opacity 500ms ease-out;
+    transform:translate(0);
+    opacity: 1;
+}
+.name-input {
+    padding: 5px;
+    font-size: 12px;
+    width: 150px;
+    height: 20px;
+    border-radius: 25px;
+    outline: none;
+} 
+.settings-button {
+    height: 30px;
+    width: 70px;
+    background: none; 
+    color: white;
+    border: 1px solid #d1e3d1;
+    border-radius: 50px; 
+    font: greetingFont;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: inline-block;
+
+}
+.settings-button:hover {
+    background: #4caf50;
+
+}
+.rotate:hover {
+     transform: rotate(360deg);
+}
+.rotate {
+    transition: transform 0.5s ease 0s;
+    display: inline-block;
+}
+.name-form {
+    padding-top: 20px;
+}
+.settings-box {
+    padding: 10px;
+    text-align: left;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+/*Clusters*/
+.clusters {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+.cluster-button {
+    height: 42px;
+    width: 170px;
+    background: none; 
+    color: white;
+    border: 1px solid #d1e3d1;
+    border-radius: 50px; 
+    font-size: 17px;
+    font-family: greetingFont;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    margin: 15px;
+    transition: all 0.5s;
+}
+.cluster-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.cluster-button span:after {
+    content: '  >>';
+    align-content: center;
+    font-size: 17px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.cluster-button:hover span {
+    padding-right: 25px;
+}
+.cluster-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#work {
+    border: 1px solid #00ff5a;
+}
+#school {
+    border: 1px solid #3bff80;
+}
+#mail {
+    border: 1px solid #6effa1;
+}
+#music {
+    border: 1px solid #8cffb5;
+}
+#entertainment {
+    border: 1px solid #b0ffcc;
+}
+#socialmedia {
+    border: 1px solid #ccffde;
+}
+#sports {
+    border: 1px solid #e8fff0;
+}
+#shopping {
+    border: 1px solid #ffffff;
+}
+
+/*Edit*/
+.edit {
+    position: absolute;
+    display: block;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    top: 250px;
+    left: 375px;
+    align-content: center;
+    border-radius: 25px;
+    border: 1px solid #00ff5a;
+    transform:translate(0);
+    opacity: 0;
+}
+.edit-active {
+    position: absolute;
+    display: block;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    top: 250px;
+    left: 375px;
+    align-content: center;
+    border-radius: 25px;
+    border: 1px solid #00ff5a;
+    transition: opacity 500ms ease-out;
+    transform:translate(0);
+    opacity: 1;
+}
+#edit-title {
+    color: #7aff80;
+    font-size: 16px;
+    text-align: center;
+    font-family: greetingFont;
+    margin: 20px;
+}
+table td {
+    color: white;
+    font-size: 12px;
+    padding: 3px;
+}
+.edit-submit {
+    position: relative;
+    left: 210px;
+    margin: 15px;
+}
+.number-input {
+    padding: 5px;
+    font-size: 12px;
+    width: 30px;
+    height: 15px;
+    border-radius: 25px;
+    outline: none;
+}
+.cancel {
+    position: relative;
+    margin: 15px;
+}
+

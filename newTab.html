@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Tab</title>
+        <link href="main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class = "main">
+            <h1 id="greeting">Welcome Back, User.</h1>
+            <script src = "background.js"></script>
+                <!--Google search bar-->
+                <div class="search-box">
+                    <form method="GET" action="http://www.google.com/search">
+                        <input type="text" class = "search-bar"  name=q placeholder = "Search Google..." />
+                        <input type="submit" class = "search-button" value="Search"/>
+                    </form>
+                </div>
+                <!--Settings-->
+                <div class ="settings-box"> 
+                    <button class = "settings-button" id="open-settings"><span class="rotate"><i class="fa fa-cog fa-2x"></i></span></button>
+                    <div class = "disappearing-form" id="disappear">
+                        <form class = "name-form" id = "name-form" action = "#">
+                            <input class="name-input" type="text" id="username" placeholder="Type your name here...">
+                            <button type="button" class="settings-button" id="save-button">Set Name</button>
+                        </form>
+                    </div>
+                    <script src = "backgroundSettings.js"></script>
+                </div>
+                <!--Clusters-->
+                <div class = "clusters" oncontextmenu="return false;">
+                    <button class = "cluster-button" id = "work" oncontextmenu="return false"><i class="fa fa-briefcase"></i>  <span>Work</span></button>
+                    <button class = "cluster-button" id = "school"><i class="fa fa-graduation-cap"></i>  <span>School</span></button>
+                    <button class = "cluster-button" id = "mail"><i class="fa fa-envelope"></i>  <span>Mail</span></button>
+                    <button class = "cluster-button" id = "music"><i class="fa fa-headphones"></i></i>  <span>Music</span></button>
+                    <button class = "cluster-button" id = "entertainment"><i class="fa fa-film"></i>  <span>Entertainment</span></button>
+                    <button class = "cluster-button" id = "socialmedia"><i class="fa fa-users"></i>  <span>Social Media</span></button>
+                    <button class = "cluster-button" id = "sports"><i class="fa fa-futbol-o"></i>  <span>Sports</span></button>
+                    <button class = "cluster-button" id = "shopping"><i class="fa fa-shopping-cart"></i>  <span>Shopping</span></button>
+                    <script src = "backgroundCluster.js"></script>
+                    <script src = "backgroundOpenEdit.js"></script>
+                </div>
+                <!--Edit-->
+                <div class = "edit" id = "hidden-edit">
+                    <h2 id="edit-title">Enter the position of the link you wish to remove.</h2>
+                    <table id = "edit-table"></table>
+                    <div class = "edit-submit">
+                        <input class="number-input" type="number" min="1" id="number">
+                        <button type="button" class="settings-button" id="edit-button">Remove</button>
+                    </div>
+                    <div class = "cancel">
+                        <button type="button" class="settings-button" id="cancel-button">Cancel</button>
+                    </div>
+                    <script src = "backgroundCloseEdit.js"></script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
