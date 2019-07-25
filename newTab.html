@@ -2,35 +2,51 @@
 <html>
     <head>
         <title>New Tab</title>
-        <link href="main.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href = "main.css" rel="stylesheet">
+        <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="header">
+        <div class = "header" id = "page-background">
             <div class = "main">
-            <h1 id="greeting">Welcome Back, User.</h1>
+            <h1 id = "greeting">Welcome Back, User.</h1>
             <script src = "background.js"></script>
                 <!--Google search bar-->
                 <div class="search-box">
                     <form method="GET" action="http://www.google.com/search">
                         <input type="text" class = "search-bar"  name=q placeholder = "Search Google..." />
-                        <input type="submit" class = "search-button" value="Search"/>
+                        <input type="submit" class = "search-button" value="Search" id = "search-color"/>
                     </form>
                 </div>
                 <!--Settings-->
-                <div class ="settings-box"> 
+                <div class = "settings-box"> 
                     <button class = "settings-button" id="open-settings"><span class="rotate"><i class="fa fa-cog fa-2x"></i></span></button>
                     <div class = "disappearing-form" id="disappear">
-                        <form class = "name-form" id = "name-form" action = "#">
-                            <input class="name-input" type="text" id="username" placeholder="Type your name here...">
-                            <button type="button" class="settings-button" id="save-button">Set Name</button>
-                        </form>
+                        <div class = "theme">
+                            <p>Set your greeting name: </p>
+                            <form class = "name-form" id = "name-form" action = "#">
+                                <input class="name-input" type="text" id="username" placeholder="Type your name here...">
+                                <button type="button" class="settings-button" id="save-button">Set Name</button>
+                            </form>
+                        </div>
+                        <div class = "theme" id = "theme-button">
+                            <p>Choose your theme: </p>
+                                <input type = 'radio' name = 'theme' id = 'beach'> Beach<br>
+                                <input type = 'radio' name = 'theme' id = 'canyon'> Canyon<br>
+                                <input type = 'radio' name = 'theme' id = 'car'> Car<br>
+                                <input type = 'radio' name = 'theme' id = 'city'> City<br>
+                                <input type = 'radio' name = 'theme' id = 'golden'> Golden<br>
+                                <input type = 'radio' name = 'theme' id = 'lake'> Lake<br>
+                                <input type = 'radio' name = 'theme' id = 'mystical'> Mystical<br>
+                                <input type = 'radio' name = 'theme' id = 'nature'> Nature<br>
+                                <input type = 'radio' name = 'theme' id = 'samoyed'> Samoyed<br>
+                                <input type = 'radio' name = 'theme' id = 'space'> Space<br>
+                        </div>
                     </div>
                     <script src = "backgroundSettings.js"></script>
                 </div>
                 <!--Clusters-->
-                <div class = "clusters" oncontextmenu="return false;">
-                    <button class = "cluster-button" id = "work" oncontextmenu="return false"><i class="fa fa-briefcase"></i>  <span>Work</span></button>
+                <div class = "clusters" id = "clusters-background" oncontextmenu="return false;">
+                    <button class = "cluster-button" id = "work"><i class="fa fa-briefcase"></i>  <span>Work</span></button>
                     <button class = "cluster-button" id = "school"><i class="fa fa-graduation-cap"></i>  <span>School</span></button>
                     <button class = "cluster-button" id = "mail"><i class="fa fa-envelope"></i>  <span>Mail</span></button>
                     <button class = "cluster-button" id = "music"><i class="fa fa-headphones"></i></i>  <span>Music</span></button>

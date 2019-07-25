@@ -1,7 +1,7 @@
 //Loops through the links from the array of the specified Cluster, creating new tabs for each link
 function loop_cluster(arr) {
       if (arr.length == 0){
-        alert("This Cluster currently has no links in it. Manually add by clicking the edit button in the top right corner of a new tab or go to the desired webpage and click on the Cluster icon.")
+        alert("This Cluster currently has no links in it. To add a link, navigate to the desired webpage, click on the Cluster icon, and add to the intended Cluster.")
         return;
       }
       for (var i = 0; i<arr.length;i++){

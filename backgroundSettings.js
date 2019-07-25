@@ -55,3 +55,22 @@ txt.addEventListener("keypress", function(event) {
     event.preventDefault();
     }
   });
+
+//Saves theme to chrome.storage 
+function save_theme(e) {
+    var theme = e.target.id;
+    chrome.storage.sync.set({"theme": theme}, function() {
+      document.location.reload();
+    });
+}
+//when theme radio button is clicked, updates theme in chrome.storage
+document.getElementById('beach').addEventListener('click', save_theme);
+document.getElementById('canyon').addEventListener('click', save_theme);
+document.getElementById('car').addEventListener('click', save_theme);
+document.getElementById('city').addEventListener('click', save_theme);
+document.getElementById('golden').addEventListener('click', save_theme);
+document.getElementById('lake').addEventListener('click', save_theme);
+document.getElementById('mystical').addEventListener('click', save_theme);
+document.getElementById('nature').addEventListener('click', save_theme);
+document.getElementById('samoyed').addEventListener('click', save_theme);
+document.getElementById('space').addEventListener('click', save_theme);

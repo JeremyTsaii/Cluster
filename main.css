@@ -11,7 +11,7 @@ body {
 }
 .header {
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(wallpapers/carWallpaper.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(wallpapers/loadingWallpaper.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -25,7 +25,7 @@ body {
 
 /*Greeting text*/
 h1 {
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+
     color: #fff;
     margin-bottom: 70px;
     font-size: 60px;
@@ -138,17 +138,25 @@ h2 {
     top: 30px;
     left: 20px;
 }
+.theme {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    color: #fff;
+    font-family: greetingFont;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 0px 4px 4px;
+}
 
 /*Clusters*/
 .clusters {
     position: absolute;
     bottom: 5px;
-    right: 10px;
+    right: 0px;
 }
 .cluster-button {
     height: 42px;
-    width: 170px;
-    background: none; 
+    width: 180px;
+    background: none;
     color: white;
     border: 1px solid #d1e3d1;
     border-radius: 50px; 
@@ -185,28 +193,28 @@ h2 {
 }
 
 #work {
-    border: 1px solid #00ff5a;
+    border: 2px solid #00ff5a;
 }
 #school {
-    border: 1px solid #3bff80;
+    border: 2px solid #3bff80;
 }
 #mail {
-    border: 1px solid #6effa1;
+    border: 2px solid #6effa1;
 }
 #music {
-    border: 1px solid #8cffb5;
+    border: 2px solid #8cffb5;
 }
 #entertainment {
-    border: 1px solid #b0ffcc;
+    border: 2px solid #b0ffcc;
 }
 #socialmedia {
-    border: 1px solid #ccffde;
+    border: 2px solid #ccffde;
 }
 #sports {
-    border: 1px solid #e8fff0;
+    border: 2px solid #e8fff0;
 }
 #shopping {
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
 }
 
 /*Edit*/
@@ -218,7 +226,7 @@ h2 {
     left: 375px;
     align-content: center;
     border-radius: 25px;
-    border: 1px solid #00ff5a;
+    border: 2px solid #ffffff;
     transform:translate(0);
     opacity: 0;
 }
@@ -230,7 +238,7 @@ h2 {
     left: 375px;
     align-content: center;
     border-radius: 25px;
-    border: 1px solid #00ff5a;
+    border: 2px solid #ffffff;
     transition: opacity 500ms ease-out;
     transform:translate(0);
     opacity: 1;
