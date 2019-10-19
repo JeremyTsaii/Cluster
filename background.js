@@ -175,7 +175,7 @@ function lake_change() {
   //search button
   document.getElementById('search-color').style.backgroundColor = "#ff5ee6"
   //cluster outlines
-  cluster_outline("#ff5ee6","#ff85ec","#fca4ee","#facaf2","#8cffb5","#6effa1;","#3bff80","#00ff5a");
+  cluster_outline("#ff5ee6","#ff85ec","#fca4ee","#facaf2","#8cffb5","#6effa1","#3bff80","#00ff5a");
   //edit box
   document.getElementById('edit-title').style.color = "#ff5ee6";
 }

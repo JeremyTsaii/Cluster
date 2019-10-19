@@ -222,8 +222,8 @@ h2 {
     position: absolute;
     display: block;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-    top: 250px;
-    left: 375px;
+    top: 50%;
+    left: 35%;
     align-content: center;
     border-radius: 25px;
     border: 2px solid #ffffff;
@@ -234,8 +234,8 @@ h2 {
     position: absolute;
     display: block;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-    top: 250px;
-    left: 375px;
+    top: 50%;
+    left: 38%;
     align-content: center;
     border-radius: 25px;
     border: 2px solid #ffffff;

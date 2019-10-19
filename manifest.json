@@ -1,6 +1,6 @@
 {
     "name": "Cluster",
-    "version": "1.0.1",
+    "version": "1.2.0",
     "description": "An easy way to group related pages and open them simultaneously!",
     "author": "Jeremy T.",
     "permissions": ["activeTab", "storage", "contextMenus"],
