@@ -8,7 +8,7 @@ Version 1.1.0 comes with the ability to change your background to 10 high-defini
 
 Check it out on the Chrome Web Store [here.](https://chrome.google.com/webstore/detail/cluster/gfnojhigkbkldehjmjgmppmaknjcomio?hl=en)
 
-![Example Image](https://github.com/JeremyTsaii/5C-RateMyP/blob/master/example/siteExample.PNG)
+![Example Image](https://github.com/JeremyTsaii/Cluster/blob/master/example/siteExample.PNG)
 
 ### How was this developed?
 
